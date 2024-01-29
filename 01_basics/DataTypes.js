@@ -21,3 +21,10 @@ console.table([accountId,accountEmail,accountPerformance]);
 let converBool=Boolean(Num);
 console.log(converBool);
 // if you convert an empty string into boolean it wiil give false but if the string is not empty then it will give true
+
+let a="2";
+let b=2;
+console.log(a==b);//true
+console.log(a===b);//false
+// == simply checks the value of the variable 
+// === strictly equals to, not only checks the value but also the data type
