@@ -1,3 +1,12 @@
+// JavaScript is a dynamically typed language
+
+// data types are classified into two types:- Primitive and Non Primitive
+
+// Primitive data types : string, Number, boolean, null, undefined, symblo, BigInt
+
+// Non primitive data types: aka reference data types: Arrays, Objects, Functions
+
+
 "use strict"//uses newer version js
 
 const accountId=19889;
@@ -28,3 +37,8 @@ console.log(a==b);//true
 console.log(a===b);//false
 // == simply checks the value of the variable 
 // === strictly equals to, not only checks the value but also the data type
+
+
+
+
+
