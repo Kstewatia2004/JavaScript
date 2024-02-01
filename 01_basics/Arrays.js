@@ -28,4 +28,38 @@ console.log("B",myArr);
 // splice method creates a subarray and stores it in a different array while at the same time also removing the elements present in the parameter from the original array
 // it includes the end value
 
+const names1=["ram","sam","pam"];
+const names2=["mikey","loki"];
 
+const names=names1.push(names2);//this will not add the elements of the array names2 into aray names1 instead it will take the entire array as an element and add it to names1
+
+
+// to add 2 different arrays use concat method or another imp operator "SPREAD"
+const names_new=names1.concat(names2);
+
+// spread operator puts the elements of the array instead of the whole array
+console.log(...names1,...names2);
+const tst=[...names1,...names2];
+console.log(tst);
+
+// we use flat operation if we have a nested array to multiple levels to convert it to an array with only the elements
+const anotherArray=[1,2,[3,4,[5,6]]];
+const usableArray=anotherArray.flat(Infinity);//we specidy the depth till which we want to pull the elements
+console.log(usableArray);
+
+
+// we use the "Array.from" function to convert any data type to array
+// because when we take some data from say a webpage we may get it in the form of objects or something else 
+
+const str1="hitesh";
+const arr1= Array.from(str1);
+console.log(arr1);
+
+// incase of objects we use the function Arrays.of
+
+const obj1={
+    name1: "kanishk",1
+    name2: "ram",
+}
+const objToArray=Array.of(obj);
+console.log(objToArray);
