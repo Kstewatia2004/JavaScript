@@ -1,0 +1,16 @@
+const obj={
+    name:"kanishk",
+    age:19
+};
+// if we want to call a particular value many times from the object lets say name we will ness to type obj.name several times so instead 
+// we will use "Object Destructing":
+const {name: a1}=obj;
+console.log(a1);
+
+// API are the values we recieve from the backend in the form of JSON:-
+// eg:- {
+//     "name":"hitesh",
+//     "class":"tenth"
+// }keys in the JSON are in the string format
+
+// sometimes we get the API in the form of arrays consisting of objects
