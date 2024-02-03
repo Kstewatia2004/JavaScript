@@ -32,3 +32,70 @@ myObj.greetings= function() {
     console.log(`hello ${this.name}`);
 }
 console.log(myObj.greetings());
+
+const user= new Object();//singleton object
+
+// non singlrton object:-
+const user1={};
+user1.id = 6;
+user1.name = "sam";
+user1.isLoggedIn = false;
+
+// getting keys from an object:-
+const keys = Object.keys(user1);//it returns an array
+
+// using the keys to get the values of an object:-
+
+for (let i = 0; i < keys.length; i++) {
+    console.log(user1[keys[i]]);
+}
+console.log(keys);// it returns an array
+
+// directly acessing the the values of the object:-
+console.log(Object.values(user1));
+
+// storing both the keys and values in an array:-
+console.log(Object.entries(user1));
+
+// checking if a property exists in an object:-
+console.log(user1.hasOwnProperty('id'));
+
+// nesting of objects:
+
+const regularUser={
+    fullname:{
+        username:{
+            firstname:"kanishk",
+            lastname:"tewatia"
+        }
+    }
+};
+console.log(regularUser.fullname?.username.firstname);
+//acessing the first name
+// question mark is used to only try if the following objects if the given object exists
+
+// merging two obects:-
+const obj1={
+    1:"1",
+    2:"2"
+};
+const obj2={
+    3:"3",
+    4:"4"
+};
+
+const obj3= Object.assign({},obj1,obj2);
+console.log(obj3);
+
+// we can also use the spread method:-
+const obj4 = {...obj1, ...obj2};
+console.log(obj4);
+
+// acessing an object in an array:-
+
+const a=[
+    {
+        name:"kanishk"
+    },{}
+];
+console.log((a[0].name));   
