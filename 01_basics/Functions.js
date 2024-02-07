@@ -33,3 +33,27 @@ function isLoggedIn(username){
 }
 console.log(isLoggedIn("ravikant"));
 // if we dont pass any argument it will return undefined just logged in
+
+// if we want to pass many arguments in the functions and dont know how many we us rest operator:-
+function calculateCartPrice(...num){
+    return num;
+}
+console.log(calculateCartPrice(30,40,50));//it will return all the elements in the array
+
+// Passing objects in the functions:-
+const user={
+    username:"kanishk",
+    id:55
+};
+function passObjects(anyObject){
+    console.log(`username is ${anyObject.username} and id is ${anyObject.id}`)
+}
+
+// calling the function with an object in the argument:-
+passObjects(user);
+// object can also be passed in the function directly:-
+
+passObjects({
+    username:"sam",
+    id:67
+});
