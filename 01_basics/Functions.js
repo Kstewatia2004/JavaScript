@@ -32,4 +32,4 @@ function isLoggedIn(username){
 
 }
 console.log(isLoggedIn("ravikant"));
-// if we dont pass any argument it will reeturn undefined just logged in
+// if we dont pass any argument it will return undefined just logged in
