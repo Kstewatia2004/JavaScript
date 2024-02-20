@@ -1,3 +1,3 @@
 const k=100
 // control flow:-
-if (k>10) console.log("hello")
+if (k>10) console.log("hello") //implicit scope
